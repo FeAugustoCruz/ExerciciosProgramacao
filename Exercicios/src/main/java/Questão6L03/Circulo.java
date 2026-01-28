@@ -8,19 +8,22 @@ package Questão6L03;
  *
  * @author Fernando
  */
-public class Quadrado extends Figura{
-    private double lado;
+
+import java.lang.Math;
+
+public class Circulo extends Figura{
+    public double raio;
     
-    public Quadrado(double lado){
-        this.lado = lado;
+    public Circulo(double raio){
+        this.raio = raio;
     }
     
     @Override
     public double calcularArea(){
-        return lado*lado;
+        return Math.PI*Math.pow(raio, 2);
     }
     
-    public void getLado(double lado){
-        this.lado = lado;
+    public void getRaio(double raio){
+        this.raio = raio;
     }
 }
