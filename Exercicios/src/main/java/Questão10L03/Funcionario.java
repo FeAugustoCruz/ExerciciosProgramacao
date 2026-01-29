@@ -12,5 +12,18 @@ abstract class Funcionario {
         private double salarioBase;
         private String nome;
         
-        public abstract void calcularPagamento();
+        public Funcionario(String nome, double salarioBase){
+            this.nome = nome;
+            this.salarioBase = salarioBase;
+        }
+        
+        public abstract double calcularPagamento();
+        
+        public String getNome(){
+            return nome;
+        }
+        
+        public double getSalarioBase(){
+            return salarioBase;
+        }
 }
