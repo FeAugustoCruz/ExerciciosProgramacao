@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package Questão2L04;
+package Questão3L04;
 
 /**
  *
  * @author Fernando
  */
-//Todos os metodos são abstract!, nativamente.
-public interface MetododePagamento {
-    boolean autorizar(double valor); 
-    public void processarPagamento(MetododePagamento metodo, double valor);
+public interface Documentos {
+    void abrir();
+    boolean buscarPorPalavraChave(String palavra);
+    int obterNumerodePaginas();
 }

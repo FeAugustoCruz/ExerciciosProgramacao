@@ -8,18 +8,18 @@ package Questão2L04;
  *
  * @author Fernando
  */
-public class Pix implements MetododePagamento{
+public class Boleto implements MetododePagamento{
     @Override
     public void processarPagamento(MetododePagamento metodo, double valor){
-        if (metodo.autorizar(valor)){
+        if(metodo.autorizar(valor)){
             System.out.printf("O valor de %.2fR$ foi autorizado!\n", valor);
         }else{
             System.out.printf("O valor de %.2fR$ foi negado!\n", valor);
         }
     }
     
-    @Override
+    @Override 
     public boolean autorizar(double valor){
-        return valor >= 10000;
+        return valor >= 0;
     }
 }
