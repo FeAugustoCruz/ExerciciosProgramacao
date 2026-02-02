@@ -2,16 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Questão9L04;
+package Questão10L04;
 
 /**
  *
  * @author Fernando
  */
-public class InteligenciaAliada implements InteligenciaArtificial{
+public class ProdutoDigital implements ItemVenda{
+    private double preco;
+    
+    public ProdutoDigital(double preco){
+        this.preco = preco;
+    }
     
     @Override
-    public void atualizar(){
-        System.out.println("A IA e amiga!");
+    public double getPreco(){
+        return preco;
     }
+    
 }

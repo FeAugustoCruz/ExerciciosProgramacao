@@ -8,9 +8,10 @@ package Questão9L04;
  *
  * @author Fernando
  */
-public class InteligenciaNeutra implements InteligenciaArtificial{
-    @Override 
+public class InteligenciaPerseguidora implements InteligenciaArtificial{
+    
+    @Override
     public void atualizar(){
-        System.out.println("A IA esta no modo neutro!");
+        System.out.println("A IA esta perseguindo o player");    
     }
 }

@@ -2,15 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Questão9L04;
+package Questão3L05;
 
 /**
  *
  * @author Fernando
  */
-public class InteligenciaNeutra implements InteligenciaArtificial{
-    @Override 
-    public void atualizar(){
-        System.out.println("A IA esta no modo neutro!");
-    }
+public abstract class AparelhoSonoro {
+    abstract public void som();
 }
