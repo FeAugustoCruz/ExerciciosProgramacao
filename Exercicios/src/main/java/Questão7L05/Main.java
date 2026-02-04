@@ -23,7 +23,10 @@ public class Main {
         
         Iterator<Integer> i = colecao.iterator();
         
-        
+        while(i.hasNext()){
+            int valor = i.next();
+            System.out.println("Numero: " + valor);
+        }
     
     }
 }
